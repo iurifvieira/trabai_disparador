@@ -20,22 +20,22 @@
      width: 100%;
  }
 
- .login-card {
+ .cadastro-card {
      background-color: #0d2436;
      border-radius: 24px;
-     padding:  62px 40px;
+     padding: 40px 40px;
      position: relative;
      width: 100%;
-     max-width: 420px;
+     max-width: 400px;
  }
 
  .header {
      text-align: center;
-     margin-bottom: 52px;
+     margin-bottom: 24px;
  }
 
  .header h1 {
-     font-size: 32px;
+     font-size: 28  px;
      color: white;
      font-weight: 300;
      margin-bottom: 22px;
@@ -58,7 +58,7 @@
  .formulario {
      display: flex;
      flex-direction: column;
-     gap: 20px;
+     gap: 16px;
  }
 
  input {
@@ -74,7 +74,7 @@
      display: flex;
      align-items: center;
      gap: 16px;
-     margin: 20px 0;
+     margin: 12px 0;
  }
 
  .divisao span:first-child,
@@ -111,17 +111,17 @@
      background-color: #ff5722;
  }
 
- .cadastro {
+ .login {
      text-align: center;
      margin-top: 10px;
  }
 
- .cadastro span {
+ .login span {
      color: #9ca3af;
      font-size: 12px;
  }
 
- .cadastro a {
+ .login a {
      color: white;
      text-decoration: none;
      margin-left: 4px;

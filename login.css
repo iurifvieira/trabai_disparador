@@ -15,20 +15,23 @@
  }
 
  .container {
-     position: relative;
+     display: flex;
+     justify-content: center;
      width: 100%;
  }
 
  .login-card {
      background-color: #0d2436;
      border-radius: 24px;
-     padding: 40px 32px;
+     padding: 60px 40px;
      position: relative;
+     width: 100%;
+     max-width: 400px;
  }
 
  .header {
      text-align: center;
-     margin-bottom: 42px;
+     margin-bottom: 52px;
  }
 
  .header h1 {
@@ -65,10 +68,6 @@
      border-radius: 30px;
      color: white;
      font-size: 16px;
-
-
-
-
  }
 
  .divisao {
@@ -116,13 +115,14 @@
      text-align: center;
      margin-top: 10px;
  }
- .cadastro span{
-    color: #9ca3af;
-    font-size: 12px;
+
+ .cadastro span {
+     color: #9ca3af;
+     font-size: 12px;
  }
 
- .cadastro a{
-    color: white;
-    text-decoration: none;
-    margin-left: 4px;
+ .cadastro a {
+     color: white;
+     text-decoration: none;
+     margin-left: 4px;
  }

@@ -4,32 +4,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevNox - Aba 1</title>
+    <title>DevNox - Campanha</title>
     <link rel="stylesheet" href="Aba1.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
 
-
 <body>
     <header>
         <div class="top-banner-1">
-            <p>Nome do usuario</p>
-            <div class="menu-user">
-                <a href="#" class="menu-icon-user" title="Iniciar sessão">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-person" viewBox="0 0 16 16">
-                        <path
-                            d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z">
-                        </path>
-                    </svg>
-                </a>
-            </div>
+            <section>
+                <div class="menu-user">
+                    <a href="perfil.html" class="menu-icon-user" title="Perfil">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-person" viewBox="0 0 16 16">
+                            <path
+                                d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z">
+                            </path>
+                        </svg>
+                    </a>
+                </div>
+            </section>
+        </div>
+        <div class="top-banner-2">
+            <h3>Nova campanha</h3>
         </div>
     </header>
     <main>
-        
-    </main>
+        <section class="container-main">
+            <div class="card-contatos">
+                <div class="pesquisa">
+                    <form action="/buscar" method="get" class="search-form">
+                        <input type="search" name="q" placeholder="Buscar contato" required="">
+                        <button type="submit">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-search" viewBox="0 0 16 16">
+                                <path
+                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0">
+                                </path>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="container-cards">
+                <article class="container-card-mensagem">
+                    <div class="card-header">
+                        <span class="card-label"></span>
+                        <h2>Escreva sua mensagem</h2>
+                    </div>
+                    <div class="campo-digitar">
+                        <textarea id="meuCampo" placeholder="Digite aqui..."></textarea>
+                    </div>
+                    <div class="frases-mensagem">
+                        <button type="button" class="button-mensagem">Nome</button>
+                        <button type="button" class="button-mensagem">Empresa</button>
+                        <button type="button" class="button-mensagem">Link.</button>
+                    </div>
+                </article>
+                <article class="container-card-midia">
+                    <div class="card-header">
+                        <span class="card-label">Mídia(Opcional)</span>
+                    </div>
+                    <div class="midia-grupo" id="drop-zone">
+                        <span class="drop-zone__prompt">Arraste arquivos ou</span>
+                        <label for="midia-input" class="drop-zone-button">Selecionar arquivos</label>
+                        <input type="file" id="midia-input" name="minhaFoto" class="drop-zone__input" multiple>
+                        <span class="midia-formatos">JPG, PNG, MP4 ou PDF</span>
+                    </div>
+                </article>
 
+                <article class="container-card-agendamento">
+                    <div class="card-header">
+                        <span class="card-label">Agendamento</span>
+                    </div>
+                    <div class="horario">
+                        <label class="data-agenda">
+                            <span>Data</span>
+                            <input id="campoData" type="date">
+                        </label>
+                        <label class="hora-agenda">
+                            <span>Hora</span>
+                            <input id="campoHora" type="time">
+                        </label>
+                        <label class="intervalo-mensagens">
+                            <label for="intervalo">Intervalo entre mensagens:</label>
+                            <input id="campo-intervalo" type="number"  name="intervalo" min="1" step="1" value="5" required>
+                        </label>
+                    </div>
+                </article>
+            </div>
+            <div class="container-phone">
+                <div class="card-phone">
+                    <div class="conteudo-dentro-phone">
+                        <div class="cabecalho-zap">
+                            <p>usuario</p>
+                        </div>
+
+                        <div class="tela-conversa-zap">
+                            <div id="balaoZap" class="balao-mensagem-zap">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="phone-action-button">Enviar</button>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
 </body>
 
 </html>

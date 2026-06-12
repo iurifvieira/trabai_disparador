@@ -23,7 +23,7 @@
  .login-card {
      background-color: #0d2436;
      border-radius: 24px;
-     padding:  62px 40px;
+     padding: 62px 40px;
      position: relative;
      width: 100%;
      max-width: 420px;
@@ -35,11 +35,18 @@
  }
 
  .header h1 {
-     font-size: 32px;
+     font-size: 40px;
      color: white;
      font-weight: 300;
      margin-bottom: 22px;
      letter-spacing: 0.6px;
+     transition: transform 0.3s ease-out;
+ }
+
+ .header h1:hover {
+     transform: translateY(-1px);
+     color: #fa815b;
+     text-shadow: 1px 1px 3px rgba(250, 129, 91, 0.4);
  }
 
  .header p {
@@ -53,6 +60,11 @@
          Helvetica,
          Arial,
          sans-serif;
+ }
+
+ .header p:hover {
+     color: #fa815b;
+     text-shadow: 1px 1px 3px rgba(250, 129, 91, 0.4);
  }
 
  .formulario {
@@ -105,11 +117,16 @@
      color: white;
      font-size: 16px;
      cursor: pointer;
+     box-shadow: 0.3s;
+     transition: transform 0.3s ease-out;
  }
 
  button:hover {
-     background-color: #ff5722;
+     transform: translateY(-2px);
+     background-color: #fa815b;
+     box-shadow: 5px 5px 15px lab(17.57% 24.94 22.29 / 0.887);
  }
+
 
  .cadastro {
      text-align: center;
@@ -125,4 +142,31 @@
      color: white;
      text-decoration: none;
      margin-left: 4px;
+     display: inline-block;
+     transition: text-shadow 0.3s;
+     transition: transform 0.3s ease-out;
+
+ }
+
+ .cadastro a:hover {
+     transform: translateY(-1px);
+     color: #fa815b;
+     text-shadow: 1px 1px 3px rgba(250, 129, 91, 0.4);
+ }
+
+ #campoEmail,
+ #campoSenha {
+     transition: border-color 0.2s ease, box-shadow 0.2s ease;
+ }
+
+ #campoEmail:hover,
+ #campoSenha:hover {
+     border-color: #ffb094;
+ }
+
+ #campoEmail:focus,
+ #campoSenha:focus {
+     outline: none;
+     border-color: #fa815b;
+     box-shadow: 0 0 8px rgba(250, 129, 91, 0.25);
  }

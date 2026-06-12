@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevNox - Seu Perfil </title>
+    <link rel="stylesheet" href="perfil.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <header>
+        <div class="top-banner-1">
+            <section>
+                <div class="menu-user">
+                    <a href="aba.html" class="menu-icon-exit" title="Voltar">
+                        <!-- Ícone de Seta para voltar -->
+                        <svg xmlns="http://w3.org" width="16" height="16" fill="currentColor"
+                            class="bi bi-box-arrow-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0z" />
+                            <path fill-rule="evenodd"
+                                d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z" />
+                        </svg>
+                    </a>
+                </div>
+            </section>
+        </div>
+        <main>
+            <section class="container-main">
+                <div class="card-perfil">
+                    <article class="perfil">
+                        <h2>Perfil do usuário</h2>
+                        <div class="perfil-foto">
+                            <img id="fotoUsuario" src="foto.jpg" alt="Foto do usuário">
+                            <label for="inputFotoUsuario" class="perfil-foto-overlay" title="Alterar foto">
+                                <i class="bi bi-camera-fill"></i>
+                                <span>Alterar foto</span>
+                            </label>
+                            <input type="file" id="inputFotoUsuario" accept="image/*" hidden>
+                        </div>
+                        <p id="nomeUsuario">Nome usuario</p>
+                        <p id="telefoneUsuario">47999999</p>
+                        <p id="emailUsuario">joao@email.com</p>
+                    </article>
+                </div>
+                <div class="container-cards">
+                    <article class="container-card-endereco">
+                        <div class="card-header">
+                            <spam>Endereço</spam>
+                        </div>
+                        <div class="campos-endereco">
+                            <textarea id="campoCidade" placeholder="Cidade"></textarea>
+                            <textarea id="campoBairro" placeholder="Bairro"></textarea>
+                            <textarea id="campoLogradouro" placeholder="Logradouro"></textarea>
+                            <textarea id="campoEstado" placeholder="Estado"></textarea>
+                        </div>
+                    </article>
+                    <article class="container-card-informacoes-pessoal">
+                        <div class="card-header">
+                            <spam class="card-informacao-spam">Informações pessoais</spam>
+                        </div>
+                        <div class="campos-pessoais">
+                            <textarea id="campoNome" placeholder="Nome"></textarea>
+                            <textarea id="campoTelefone" placeholder="Telefone"></textarea>
+                            <textarea id="campoSenha" placeholder="Senha"></textarea>
+                        </div>
+                    </article>
+                </div>
+                <div class="card-final">
+
+                </div>
+            </section>
+        </main>
+        <script src="script.js"></script>
+</body>
+
+</html>

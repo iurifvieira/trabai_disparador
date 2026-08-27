@@ -28,5 +28,5 @@ Versão web do sistema disparador de mensagens integrada com banco de dados, des
 ## Autores
 - [iuri](https://github.com)
 
+---
 SENAI 2026.
-

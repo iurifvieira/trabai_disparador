@@ -23,8 +23,6 @@ Versão web do sistema disparador de mensagens integrada com banco de dados, des
    npm start
    ```
 
----
-
 ## Autores
 - [iuri](https://github.com)
 
